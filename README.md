@@ -11,19 +11,19 @@
 Базовый запуск (10 последовательных запросов):
 
 ```bash
-python measure_speed.py "[https://speed.cloudflare.com/__down?bytes=5000000](https://speed.cloudflare.com/__down?bytes=5000000)"
+python measure_speed.py "https://speed.cloudflare.com/__down?bytes=5000000"
 ```
 
 Запуск с заданным числом запросов и тайм-аутом:
 
 ```bash
-python measure_speed.py "[https://speed.cloudflare.com/__down?bytes=5000000](https://speed.cloudflare.com/__down?bytes=5000000)" -n 10 -t 20
+python measure_speed.py "https://speed.cloudflare.com/__down?bytes=5000000" -n 10 -t 20
 ```
 
 Вывод отчёта в формате JSON (без строк прогресса в `stdout`):
 
 ```bash
-python measure_speed.py "[https://speed.cloudflare.com/__down?bytes=5000000](https://speed.cloudflare.com/__down?bytes=5000000)" --json
+python measure_speed.py "https://speed.cloudflare.com/__down?bytes=5000000" --json
 ```
 
 Запуск автотестов (используют локальный `ThreadingHTTPServer`, доступ в интернет не требуется):
